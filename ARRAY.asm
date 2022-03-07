@@ -4,10 +4,11 @@
 
 org 100h
 
-include emu8086.inc ; #include<stdio.h>
-                    ; #include<math.h>
-                    
-PRINT 'Junayed'
+array1 DB 5h, 7h, 1h, 8h ;int array[5]; int array[0] = 5;
+
+b_string DB 'Hello'
+
+MOV AL, array1[1]
 
 ret
 

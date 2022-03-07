@@ -12,13 +12,15 @@ org 100h
 
 MOV AX, @DATA 
 
- MOV DS, AX   
+ MOV DS, AX       
  
- MOV AH, 09H;
  
- ;MOV DX, OFFSET var1  
  
- LEA DX, var1 
+ 
+ 
+ MOV AH, 09H
+ 
+ LEA DX, var1   ;MOV DX, OFFSET var1  
         
  INT 21H
 

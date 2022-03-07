@@ -4,18 +4,10 @@
 
 org 100h
 
-.DATA 
- CHAR DB ?
-
-.CODE
- 
- 
- MOV AX, @DATA
- MOV DS, AX
- LEA SI, CHAR
- MOV AH, 01H
- INT 21H
-
+include emu8086.inc ; #include<stdio.h>
+                    ; #include<math.h>
+                    
+PRINT 'Junayed'
 
 ret
 
